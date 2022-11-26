@@ -1,0 +1,60 @@
+<div class="box">
+  <div class="chart-container">
+    <canvas id="MyChart">{{ chart }}</canvas>
+  </div>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Janeiro</th>
+        <th scope="col">Fevereiro</th>
+        <th scope="col">Março</th>
+        <th scope="col">Abril</th>
+        <th scope="col">Maio</th>
+        <th scope="col">Junho</th>
+        <th scope="col">Julho</th>
+        <th scope="col">Agosto</th>
+        <th scope="col">Setembro</th>
+        <th scope="col">Outubro</th>
+        <th scope="col">Novembro</th>
+        <th scope="col">Dezembro</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Homem</th>
+        <td><input [(ngModel)]="hJan" type="text" /></td>
+        <td><input [(ngModel)]="hFev" type="text" /></td>
+        <td><input [(ngModel)]="hMar" type="text" /></td>
+        <td><input [(ngModel)]="hAbr" type="text" /></td>
+        <td><input [(ngModel)]="hMai" type="text" /></td>
+        <td><input [(ngModel)]="hJun" type="text" /></td>
+        <td><input [(ngModel)]="hJul" type="text" /></td>
+        <td><input [(ngModel)]="hAgo" type="text" /></td>
+        <td><input [(ngModel)]="hSet" type="text" /></td>
+        <td><input [(ngModel)]="hOut" type="text" /></td>
+        <td><input [(ngModel)]="hNov" type="text" /></td>
+        <td><input [(ngModel)]="hDez" type="text" /></td>
+      </tr>
+      <tr>
+        <th scope="row">Mulher</th>
+        <td><input [(ngModel)]="mJan" type="text" /></td>
+        <td><input [(ngModel)]="mFev" type="text" /></td>
+        <td><input [(ngModel)]="mMar" type="text" /></td>
+        <td><input [(ngModel)]="mAbr" type="text" /></td>
+        <td><input [(ngModel)]="mMai" type="text" /></td>
+        <td><input [(ngModel)]="mJun" type="text" /></td>
+        <td><input [(ngModel)]="mJul" type="text" /></td>
+        <td><input [(ngModel)]="mAgo" type="text" /></td>
+        <td><input [(ngModel)]="mSet" type="text" /></td>
+        <td><input [(ngModel)]="mOut" type="text" /></td>
+        <td><input [(ngModel)]="mNov" type="text" /></td>
+        <td><input [(ngModel)]="mDez" type="text" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button type="button" class="btn btn-success" (click)="gerarGrafico()">
+    Gerar grafico
+  </button>
+</div>

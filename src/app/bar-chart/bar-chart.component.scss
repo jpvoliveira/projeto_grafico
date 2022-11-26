@@ -1,0 +1,14 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    td{
+        width: 100px;
+    }
+
+    input{
+        all: unset;
+        width: 100%;
+    }
+}
