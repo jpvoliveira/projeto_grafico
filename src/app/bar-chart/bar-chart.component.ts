@@ -45,11 +45,10 @@ export class BarChartComponent implements OnInit {
   }
 
   createChart() {
-    console.log('teste')
     this.chart = new Chart("MyChart", {
-      type: 'bar', //this denotes tha type of chart
+      type: 'bar',
 
-      data: {// values on X-Axis
+      data: {
         labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril',
           'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
         datasets: [
@@ -70,7 +69,6 @@ export class BarChartComponent implements OnInit {
       options: {
         aspectRatio: 5.0
       }
-
     });
   }
 }
